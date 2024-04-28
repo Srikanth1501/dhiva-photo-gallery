@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<!-- saved from url=(0087)file:///C:/Users/SRIKANTH/Downloads/dhiva-studio-main/DHIVA%20VISUAL%20PHOTOGRAPHY.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DHIVA VISUAL PHOTOGRAPHY</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            overflow-x: hidden;
+            max-width: 100vw;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            position: relative;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 24px;
+            background: rgb(9, 9, 121);
+            background: linear-gradient(90deg, rgba(9, 9, 121, 1) 0%, rgba(2, 0, 36, 1) 50%, rgba(9, 9, 121, 1) 100%);
+            color: #f1da28;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo img {
+            width: 250px;
+            height: auto;
+        }
+
+        nav {
+            background-color: #005792;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            border-bottom: 2px solid #00152e;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .gallery {
+            padding: 40px 10px;
+            background-color: #e5e5f7;
+            opacity: 5;
+            background-image: radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+            background-size: 10px 10px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            border-radius: 30;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-container {
+            width: 400px;
+            height: 400px;
+            margin: 5px;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow:  10px 10px 23px 3px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .image-container:hover {
+            transform: scale(1.05);
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .package-details {
+            background: rgb(103, 103, 247);
+            padding: 40px;
+            margin: 40px auto;
+            width: 100%;
+            text-align: center;
+        }
+
+        .Package-container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .Package {
+            width: 700px;
+            height: auto;
+            text-align: center;
+            cursor: pointer;
+            margin: 2% 0px;
+            box-shadow: 10px 10px 23px 3px rgba(0, 0, 0, 0.75);
+        }
+
+        .Package-container>h2 {
+            margin: 1rem 0px;
+        }
+
+        .Package img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .package-details h1 {
+            font-size: 40px;
+            color: #0f1010;
+            margin-bottom: 20px;
+        }
+
+
+        .package-details h2 {
+            font-size: 28px;
+            color: #f9f5f5;
+            margin-bottom: 20px;
+        }
+
+        .package-details p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .contact-info {
+            background: linear-gradient(to right, #00152e, #005792);
+            color: #fff;
+            padding: 40px;
+            text-align: center;
+            border-radius: 30px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            margin: 50px auto;
+            max-width: 7000px;
+        }
+
+        .contact-info h2 {
+            font-size: 28px;
+            color: #FFD700;
+            margin-bottom: 20px;
+        }
+
+        .contact-info p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        .contact-info a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .image-container {
+                width: calc(50% - 40px);
+            }
+
+            .package-details,
+            .contact-info {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo"><img src="./DHIVA VISUAL PHOTOGRAPHY_files/back.png" alt="Logo"></div>
+        <h1>DHIVA VISUAL PHOTOGRAPHY</h1>
+    </header>
+    <nav>
+        <a onclick="navigateTo(&#39;gallery&#39;)"> <b>GALLERY</b> </a>
+        <a onclick="navigateTo(&#39;packages&#39;)"><b> PACKAGES</b> </a>
+        <a onclick="navigateTo(&#39;contact&#39;)"> <b>CONTACT</b></a>
+    </nav>
+    <div class="gallery">
+        <div class="image-container">
+            <img src="./DHIVA VISUAL PHOTOGRAPHY_files/image1.jpg" onclick="showImage(&#39;./index_files/image1.jpg&#39;)">
+        </div>
+        <div class="image-container">
+            <img src="./DHIVA VISUAL PHOTOGRAPHY_files/image2.jpg" onclick="showImage(&#39;./index_files/image2.jpg&#39;)">
+        </div>
+        <div class="image-container">
+            <img src="./DHIVA VISUAL PHOTOGRAPHY_files/image3.jpg" onclick="showImage(&#39;./index_files/image3.jpg&#39;)">
+        </div>
+        <div class="image-container">
+            <img src="./DHIVA VISUAL PHOTOGRAPHY_files/image4.webp" onclick="showImage(&#39;./index_files/image4.webp&#39;)">
+        </div>
+        <div class="image-container">
+            <img src="./DHIVA VISUAL PHOTOGRAPHY_files/image5.webp" onclick="showImage(&#39;./index_files/image5.webp&#39;)">
+        </div>
+        <div class="image-container">
+            <img src="./DHIVA VISUAL PHOTOGRAPHY_files/image6.webp" onclick="showImage(&#39;./index_files/image6.webp&#39;)">
+        </div>
+        <div class="image-container">
+            <img src="./DHIVA VISUAL PHOTOGRAPHY_files/image7.webp" onclick="showImage(&#39;./index_files/image7.webp&#39;)">
+        </div>
+        <div class="image-container">
+            <img src="./DHIVA VISUAL PHOTOGRAPHY_files/image8.webp" onclick="showImage(&#39;./index_files/image8.webp&#39;)">
+        </div>
+        <div class="image-container">
+            <img src="./DHIVA VISUAL PHOTOGRAPHY_files/image9.webp" onclick="showImage(&#39;./index_files/image9.webp&#39;)">
+        </div>
+        <div class="image-container">
+            <img src="./DHIVA VISUAL PHOTOGRAPHY_files/image10.webp" onclick="showImage(&#39;./index_files/image10.webp&#39;)">
+        </div>
+        <div class="image-container">
+            <img src="./DHIVA VISUAL PHOTOGRAPHY_files/image11.webp" onclick="showImage(&#39;./index_files/image11.webp&#39;)">
+        </div>
+        <div class="image-container">
+            <img src="./DHIVA VISUAL PHOTOGRAPHY_files/image12.webp" onclick="showImage(&#39;./index_files/image12.webp&#39;)">
+        </div>
+        <div class="image-container">
+            <img src="./DHIVA VISUAL PHOTOGRAPHY_files/image13.webp" onclick="showImage(&#39;./index_files/image13.webp&#39;)">
+        </div>
+        <div class="image-container">
+            <img src="./DHIVA VISUAL PHOTOGRAPHY_files/image14.webp" onclick="showImage(&#39;./index_files/image14.webp&#39;)">
+        </div>
+        <div class="image-container">
+            <img src="./DHIVA VISUAL PHOTOGRAPHY_files/image15.webp" onclick="showImage(&#39;./index_files/image15.webp&#39;)">
+        </div>
+        <div class="image-container">
+            <img src="./DHIVA VISUAL PHOTOGRAPHY_files/image16.webp" onclick="showImage(&#39;./index_files/image16.webp&#39;)">
+        </div>
+        <div class="image-container">
+            <img src="./DHIVA VISUAL PHOTOGRAPHY_files/image17.webp" onclick="showImage(&#39;./index_files/image17.webp&#39;)">
+        </div>
+        <div class="image-container">
+            <img src="./DHIVA VISUAL PHOTOGRAPHY_files/image18.webp" onclick="showImage(&#39;./index_files/image18.webp&#39;)">
+        </div>
+        <div class="image-container">
+            <img src="./DHIVA VISUAL PHOTOGRAPHY_files/image19.webp" onclick="showImage(&#39;./index_files/image19.webp&#39;)">
+        </div>
+        <div class="image-container">
+            <img src="./DHIVA VISUAL PHOTOGRAPHY_files/image20.webp" onclick="showImage(&#39;./index_files/image20.webp&#39;)">
+        </div>
+        <div class="image-container">
+            <img src="./DHIVA VISUAL PHOTOGRAPHY_files/image22.webp" onclick="showImage(&#39;./index_files/image22.webp&#39;)">
+        </div>
+        <div class="image-container">
+            <img src="./DHIVA VISUAL PHOTOGRAPHY_files/image23.webp" onclick="showImage(&#39;./index_files/image23.webp&#39;)">
+        </div>
+        <div class="image-container">
+            <img src="./DHIVA VISUAL PHOTOGRAPHY_files/image24.webp" onclick="showImage(&#39;./index_files/image24.webp&#39;)">
+        </div>
+        <div class="image-container">
+            <img src="./DHIVA VISUAL PHOTOGRAPHY_files/image25.webp" onclick="showImage(&#39;./index_files/image25.webp&#39;)">
+        </div>
+        <div class="image-container">
+            <img src="./DHIVA VISUAL PHOTOGRAPHY_files/image26.webp" onclick="showImage(&#39;./index_files/image26.webp&#39;)">
+        </div>
+        <div class="image-container">
+            <img src="./DHIVA VISUAL PHOTOGRAPHY_files/image27.webp" onclick="showImage(&#39;./index_files/image27.webp&#39;)">
+        </div>
+        <div class="image-container">
+            <img src="./DHIVA VISUAL PHOTOGRAPHY_files/image28.webp" onclick="showImage(&#39;./index_files/image28.webp&#39;)">
+        </div>
+
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">×</span>
+        <img class="modal-content" id="modalImg">
+    </div>
+    <div id="packages" class="package-details">
+        <div>
+            <h1>Exclusive Packages</h1>
+        </div>
+        <div class="Package-container">
+            <div class="Package">
+                <h2>PLATINUM PACKAGE</h2>
+                <img src="./DHIVA VISUAL PHOTOGRAPHY_files/1.jpg" alt="">
+            </div>
+            <div class="Package">
+                <h2>GOLD PACKAGE</h2>
+                <img src="./DHIVA VISUAL PHOTOGRAPHY_files/2.jpg" alt="">
+            </div>
+            <div class="Package">
+                <h2>DIAMOND PACKAGE</h2>
+                <img src="./DHIVA VISUAL PHOTOGRAPHY_files/3.jpg" alt="">
+            </div>
+            <div class="Package">
+                <h2>SILVER PACKAGE</h2>
+                <img src="./DHIVA VISUAL PHOTOGRAPHY_files/4.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div id="contact" class="contact-info">
+        <h2>Contact Us</h2>
+        <p>Phone: 9952800643 </p>
+        <p>Location : <a href="https://maps.app.goo.gl/WibPt53MscE9sDin8">Find us on the map</a></p>
+        <p>For Booking : <a href="https://wa.me/message/VGN34QKVSTFIB1">Message us on WhatsApp</a></p>
+    </div>
+    <script>
+        // Open the modal with the clicked image
+        function showImage(imageSrc) {
+            window.open(imageSrc, "Image", "width=600, height=400");
+        }
+        // Close the modal
+        function closeModal() {
+            var modal = document.getElementById("myModal");
+            modal.style.display = "none";
+        }
+        function navigateTo(elementId) {
+            document.getElementById(elementId).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+
+
+</body></html>
